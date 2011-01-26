@@ -69,7 +69,7 @@ pair<QStringList, int> getBackends() {
 
 int main(int argc, char *argv[]) {
 	QApplication a(argc, argv);
-	a.setApplicationName("MediaPlayerClassic");
+	a.setApplicationName(APPLICATION_NAME);
 
 	const pair<QStringList, int> backends(getBackends());
 	a.addLibraryPath(BACKEND_BASE_PATH);

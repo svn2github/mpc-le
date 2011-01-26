@@ -37,7 +37,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <QSharedPointer>
 #include <Phonon/MediaObject>
 
-#define BACKEND_BASE_PATH QDir::homePath() + "/." + QApplication::applicationName()
+#define APPLICATION_NAME "Media Player Classic - Linux Edition"
+#define APPLICATION_NAME_SHORT "mpc-le"
+#define BACKEND_BASE_PATH QDir::homePath() + "/." APPLICATION_NAME_SHORT
 #define BACKEND_CURRENT BACKEND_BASE_PATH + "/phonon_backend/current.so"
 
 using Phonon::MediaObject;
